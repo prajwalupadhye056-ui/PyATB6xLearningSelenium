@@ -1,9 +1,9 @@
 
-
 from selenium import webdriver
 import pytest
 import allure
 import driver
+import time
 
 @allure.title("Print the page source")
 
@@ -13,5 +13,5 @@ def test_selenium():
    page_source_as_html= driver.page_source
    print(driver.title)
    print(driver.current_url)
-   assert "CURA HealthCare Service" in page_source_as_html
+   assert "CURA Healthcare Service" in page_source_as_html
    driver.quit()
